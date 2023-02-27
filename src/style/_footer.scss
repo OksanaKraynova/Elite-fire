@@ -1,0 +1,151 @@
+.footer {
+
+    background-color: #121212;
+    padding-top: 72px;
+@media(max-width: 1170px){
+    padding-top: calc(40px + (72 - 40) * ((100vw - 768px) / (1170 - 768)));
+}
+@media(max-width: 768px){
+    padding-top: 40px;
+}
+    &__container {
+        padding-bottom: 66px;
+     
+    }
+
+    // .footer__title
+
+    &__title {
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+    }
+
+    // .footer__contacts
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 71px;
+        gap: 20px;
+        @media(max-width: 1170px){
+            margin-top: calc(30px + (71 - 30) * ((100vw - 768px) / (1170 - 768)));
+        }
+        @media(max-width: 768px){
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+    }
+
+    // .footer__col
+
+    &__col {
+    }
+
+    &__contact + &__contact {
+        margin-top: 40px;
+        @media(max-width: 998px){
+            margin-top: 24px;
+        }
+    }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        span{
+            line-height: 36px;
+            color: #949494;
+        }
+        a{
+            transition: color 0.2s;
+            font-size: 22px;
+            line-height: 33px;
+            margin-top: 13px;
+            &:hover{
+                color: #FFCF7A;
+            }
+            @media(max-width: 998px){
+                margin-top: 0;
+            }
+        }
+    }
+
+    // .footer__btn
+
+    &__btn {
+        margin-top: 61px;
+        padding: 15px 0;
+        font-size: 18px;
+        line-height: 30px;      
+        border: 1px solid #CEB787;
+        width: 279px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s;
+        &:hover{
+            background: #CEB787;
+        }
+        @media(max-width: 768px){
+margin-top: 20px;
+        }
+    }
+
+    // .footer__right
+
+    &__right {
+        border-top: 1px solid #232323;
+        height: 102px;
+        display: flex;
+       @media(max-width: 1170px){
+        margin-top: 30px;
+       }
+       
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap:110px;
+        @media(max-width: 1170px){
+            gap: calc(30px + (110 - 30) * ((100vw - 768px) / (1170 - 768)));
+        }
+        @media(max-width: 768px){
+            column-gap: 30px;
+            flex-wrap: wrap;
+            row-gap: 14px;
+        }
+       
+        
+    }
+
+    &__logo{
+        letter-spacing: 0.105em;
+        text-transform: uppercase;
+        font-family: 'Scania Sans CY Headline';
+    }
+
+    &__date {
+        display: flex;
+        gap: 47px;
+        letter-spacing: 0.05em;
+        color: #6D6D6D;
+        @media(max-width: 768px){
+gap: 20px;
+font-size: 12px;
+        }
+    }
+    .auto{
+        margin-left: auto;
+        letter-spacing: 0.05em;
+        color: #6D6D6D;
+        &:hover{
+            text-decoration: underline;
+        }
+        @media(max-width: 768px){
+margin-left: 0;
+        }
+    }
+}
+

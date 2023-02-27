@@ -1,0 +1,89 @@
+.promo {
+    margin-top: 81px;
+    @media(max-width: 1170px){
+        margin-top: calc(20px + (81 - 20) * ((100vw - 768px) / (1170 - 768)));
+    }
+    @media(max-width: 768px){
+        margin-top: 20px;
+    }
+    &__container {
+        background: url(../img/kamins/kamin1.png) bottom right/ contain no-repeat ;
+        @media(max-width: 998px){
+            background-size: 500px;
+        }
+        @media(max-width: 869px){
+            background-size: 450px;
+        }
+        @media(max-width: 768px){
+            background: none;
+        }
+        @media(max-width: 768px){
+text-align: center;
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 1.25;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        max-width: 780px;
+        margin-bottom: 29px;
+        @media(max-width: 1170px){
+            font-size: calc(34px + (64 - 34) * ((100vw - 768px) / (1170 - 768)));
+        }
+        @media(max-width:998px){
+            max-width: 520px;
+        } 
+        @media(max-width: 768px){
+            font-size: 34px;
+            max-width: 700px;
+            text-align: center;
+            max-width: none !important;
+               }
+    }
+
+    &__price {
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        color: #FFCF7A;
+        font-weight: bold;
+        font-family: 'Scania Sans CY Headline';
+        span{
+            font-size: 18px;
+        }
+    }
+
+    &__row {
+        margin-top: 86px;
+        display: flex;
+        gap: 80px;
+        @media(max-width: 1170px){
+            margin-top: calc(40px + (86 - 40) * ((100vw - 768px) / (1170 - 768)));
+            gap: calc(40px + (80 - 40) * ((100vw - 768px) / (1170 - 768)));
+        }
+        @media(max-width: 768px){
+justify-content: center;
+gap: 40px;
+margin-top: 40px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        max-width: 130px;
+        height: 90px;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
